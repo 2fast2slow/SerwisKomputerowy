@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NaprawyController">
+   <children>
+      <fx:include source="TopMenu.fxml" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="677.0" layoutY="42.0" text="Naprawy w trakcie: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="677.0" layoutY="89.0" text="Naprawy wygasające: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="270.0" text="Podaj numer naprawy:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="59.0" layoutY="216.0" prefHeight="0.0" prefWidth="847.0" />
+            <Button fx:id="nowaNaprawaButton" layoutX="81.0" layoutY="53.0" mnemonicParsing="false" onAction="#dodajKlienta" prefHeight="34.0" prefWidth="109.0" text="Nowa naprawa" />
+            <Button layoutX="287.0" layoutY="53.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="Szukaj naprawy" />
+            <Button layoutX="81.0" layoutY="132.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="Ostatnie naprawy" />
+            <Button layoutX="287.0" layoutY="132.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="Ostatnie naprawy" />
+            <Separator layoutX="235.0" layoutY="42.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="7.0" />
+            <TextField layoutX="298.0" layoutY="268.0" />
+            <Button layoutX="490.0" layoutY="268.0" mnemonicParsing="false" text="Szybkie wyszukiwanie" />
+            <Separator layoutX="59.0" layoutY="342.0" prefHeight="0.0" prefWidth="847.0" />
+            <Label layoutX="364.0" layoutY="385.0" text="Notatki serwisowe z ostatnich dni">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="86.0" layoutY="431.0" prefHeight="137.0" prefWidth="764.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

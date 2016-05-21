@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DodawanieNaprawyController">
+   <children>
+      <fx:include source="TopMenu.fxml" />
+      <AnchorPane prefHeight="599.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="55.0" layoutY="63.0" text="Data przyjęcia do serwisu:" />
+            <TextField fx:id="datPrz" layoutX="220.0" layoutY="59.0" />
+            <Label layoutX="55.0" layoutY="104.0" text="Przewidywana data naprawy:" />
+            <TextField fx:id="datUko" layoutX="220.0" layoutY="100.0" />
+            <Label layoutX="55.0" layoutY="144.0" text="Typ naprawy:" />
+            <ChoiceBox layoutX="220.0" layoutY="140.0" prefWidth="150.0" />
+            <Label layoutX="55.0" layoutY="188.0" text="Przewidywany koszt naprawy:" />
+            <TextField fx:id="przKos" layoutX="220.0" layoutY="184.0" />
+            <Label layoutX="55.0" layoutY="255.0" text="Opisz uszkodzenia:" />
+            <TextField fx:id="opiUsz" layoutX="220.0" layoutY="225.0" prefHeight="95.0" prefWidth="348.0" />
+            <Label layoutX="55.0" layoutY="373.0" text="Komentarz" />
+            <TextField fx:id="kom" layoutX="220.0" layoutY="343.0" prefHeight="95.0" prefWidth="348.0" />
+            <Label layoutX="54.0" layoutY="471.0" text="Status" />
+            <ChoiceBox layoutX="219.0" layoutY="467.0" prefWidth="150.0" />
+            <Label layoutX="54.0" layoutY="505.0" text="Serwisant" />
+            <ChoiceBox layoutX="219.0" layoutY="501.0" prefWidth="150.0" />
+            <Button fx:id="dodajButton" layoutX="715.0" layoutY="489.0" mnemonicParsing="false" onAction="#dodajNaprawe" prefHeight="25.0" prefWidth="118.0" text="Dodaj" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
